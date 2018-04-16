@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml">
+    <command:command 
+        xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
+        xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
+        xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
+        xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+        <command:details>
+            <command:name>Get-sthAdminSDHolderProtectedUserAccount</command:name>
+            <command:verb>Get</command:verb>
+            <command:noun>sthAdminSDHolderProtectedUserAccount</command:noun>
+            <maml:description>
+                <maml:para>Функция отображает учетные записи пользователей, защищенные контейнером AdminSDHolder.</maml:para>
+            </maml:description>
+        </command:details>
+        <maml:description>
+            <maml:para>Функция отображает учетные записи пользователей Active Directory, защищенные контейнером AdminSDHolder.
+Результат выполнения включает в себя имя пользователя, значения атрибутов SamAccountName и UserPrincipalName,
+активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав досупа, 
+а также список защищенных групп, в которые входит пользователь.</maml:para>
+        </maml:description>
+        <command:syntax>
+            <command:syntaxItem>
+                <maml:name>Get-sthAdminSDHolderProtectedUserAccount</maml:name>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>EnabledOnly</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+            <command:syntaxItem>
+                <maml:name>Get-sthAdminSDHolderProtectedUserAccount</maml:name>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+                    <maml:name>Anr</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает шаблон для ANR - Ambiguous Name Resolution.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>EnabledOnly</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+            <command:syntaxItem>
+                <maml:name>Get-sthAdminSDHolderProtectedUserAccount</maml:name>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>SamAccountName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту SamAccountName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>EnabledOnly</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+            <command:syntaxItem>
+                <maml:name>Get-sthAdminSDHolderProtectedUserAccount</maml:name>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>UserPrincipalName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту UserPrincipalName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>EnabledOnly</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+        </command:syntax>
+        <command:parameters>
+            <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+                <maml:name>Anr</maml:name>
+                <maml:Description>
+                    <maml:para>Указывает шаблон для ANR - Ambiguous Name Resolution.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                <dev:type>
+                    <maml:name>String</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>None</dev:defaultValue>
+            </command:parameter>
+            <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>SamAccountName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту SamAccountName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+            </command:parameter>
+            <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                <maml:name>UserPrincipalName</maml:name>
+                <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту UserPrincipalName.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                <dev:type>
+                    <maml:name>String</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>None</dev:defaultValue>
+            </command:parameter>
+            <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                <maml:name>EnabledOnly</maml:name>
+                <maml:Description>
+                    <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                <dev:type>
+                    <maml:name>SwitchParameter</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>False</dev:defaultValue>
+            </command:parameter>
+        </command:parameters>
+        <command:examples>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderProtectedUserAccount
+                
+Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----         -------------- -----------------       ------- ------------------- ------------------ -------------------
+admin        admin          admin@domain.com        True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
+user         user           user@domain.com         True    1                   False              {Account Operators}
+disableduser disableduser   disableduser@domain.com False   1                   False              {Print Operators}
+</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
+Реультат выполнения содежит деактивированные учетные записи.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderProtectedUserAccount -EnabledOnly
+
+Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----         -------------- -----------------       ------- ------------------- ------------------ -------------------
+admin        admin          admin@domain.com        True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
+user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
+Реультат выполнения содежит только активные учетные записи.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderProtectedUserAccount -ANR u
+
+Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----         -------------- -----------------       ------- ------------------- ------------------ -------------------
+user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
+с использованием ANR - Ambiguous Name Resolution.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderProtectedUserAccount -SamAccountName user
+
+Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----         -------------- -----------------       ------- ------------------- ------------------ -------------------
+user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
+с использованием поиска по атрибуту SamAccountName.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderProtectedUserAccount -UserPrincipalName user@domain.com
+
+Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----         -------------- -----------------       ------- ------------------- ------------------ -------------------
+user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
+с использованием поиска по атрибуту UserPrincipalName.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+        </command:examples>
+    </command:command>
+
+
+    <command:command 
+        xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
+        xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
+        xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
+        xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+        <command:details>
+            <command:name>Remove-sthAdminSDHolderUserAccountProtection</command:name>
+            <command:verb>Remove</command:verb>
+            <command:noun>sthAdminSDHolderUserAccountProtection</command:noun>
+            <maml:description>
+                <maml:para>Функция удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.</maml:para>
+            </maml:description>
+        </command:details>
+        <maml:description>
+            <maml:para>Функция удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя, 
+если он не входит в группы Active Directory, защищенные контейнером AdminSDHolder.</maml:para>
+        </maml:description>
+        <command:syntax>
+            <command:syntaxItem>
+                <maml:name>Remove-sthAdminSDHolderUserAccountProtection</maml:name>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>SamAccountName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту SamAccountName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Remove</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesRemove</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+            <command:syntaxItem>
+                <maml:name>Remove-sthAdminSDHolderUserAccountProtection</maml:name>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>UserPrincipalName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту UserPrincipalName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Remove</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesRemove</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+        </command:syntax>
+        <command:parameters>
+            <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                <maml:name>SamAccountName</maml:name>
+                <maml:Description>
+                    <maml:para>Указывает значение для поиска по атрибуту SamAccountName.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                <dev:type>
+                    <maml:name>String</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>None</dev:defaultValue>
+            </command:parameter>
+                <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="Named" aliases="none">
+                    <maml:name>UserPrincipalName</maml:name>
+                    <maml:Description>
+                        <maml:para>Указывает значение для поиска по атрибуту UserPrincipalName.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+                    <dev:type>
+                        <maml:name>String</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+            <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                <maml:name>Remove</maml:name>
+                <maml:Description>
+                    <maml:para>Подтверждение выполнения действия.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                <dev:type>
+                    <maml:name>SwitchParameter</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>False</dev:defaultValue>
+            </command:parameter>
+            <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                <maml:name>YesRemove</maml:name>
+                <maml:Description>
+                    <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                <dev:type>
+                    <maml:name>SwitchParameter</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>False</dev:defaultValue>
+            </command:parameter>
+        </command:parameters>
+        <command:examples>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+                <dev:code>Remove-sthAdminSDHolderUserAccountProtection -SamAccountName user -Remove -YesRemove
+                
+Removing adminCount attribute and enabling access rules inheritance.
+
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {}
+
+adminCount attribute removed.
+Access rules inheritance enabled.</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
+Учетная запись определятеся значением атрибута SamAccountName.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+                <dev:code>Remove-sthAdminSDHolderUserAccountProtection -UserPrincipalName user@domain.com -Remove -YesRemove
+
+Removing adminCount attribute and enabling access rules inheritance.
+
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {}
+
+adminCount attribute removed.
+Access rules inheritance enabled.</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
+Учетная запись определятеся значением атрибута UserPrincipalName.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+                <dev:code>Remove-sthAdminSDHolderUserAccountProtection -SamAccountName username -Remove -YesRemove
+
+Account is a member of AdminSDHolder protected groups.
+
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}
+
+No changes were made.</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда не вносит изменений, поскольку пользователь все еще входит в защищенные контейнером AdminSDHolder группы.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+        </command:examples>
+    </command:command>
+
+
+
+
+
+    <command:command 
+        xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
+        xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
+        xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
+        xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+        <command:details>
+            <command:name>Get-sthAdminSDHolderGroup</command:name>
+            <command:verb>Get</command:verb>
+            <command:noun>sthAdminSDHolderGroup</command:noun>
+            <maml:description>
+                <maml:para>Функци отображает группы, защищенные контейнером AdminSDHolder.</maml:para>
+            </maml:description>
+        </command:details>
+        <maml:description>
+            <maml:para>Функция отображает группы Active Directory, защищенные контейнером AdminSDHolder.
+В качестве результатов выводится текущее значение атрибута dsHeuristics, защищенные группы, 
+а также группы, исключенные из списка защищенных, если такие существуют.</maml:para>
+        </maml:description>
+        <command:syntax>
+            <command:syntaxItem>
+                <maml:name>Get-sthAdminSDHolderGroup</maml:name>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+                    <maml:name>RootDSE</maml:name>
+                    <maml:Description>
+                        <maml:para>Параметр предназначен для использования другими функциями модуля.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="true" variableLength="false">System.DirectoryServices.DirectoryEntry</command:parameterValue>
+                    <dev:type>
+                        <maml:name>System.DirectoryServices.DirectoryEntry</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>None</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+        </command:syntax>
+        <command:parameters>
+            <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+                <maml:name>RootDSE</maml:name>
+                <maml:Description>
+                        <maml:para>Параметр предназначен для использования другими функциями модуля.</maml:para>
+                </maml:Description>
+                <command:parameterValue required="true" variableLength="false">System.DirectoryServices.DirectoryEntry</command:parameterValue>
+                <dev:type>
+                    <maml:name>System.DirectoryServices.DirectoryEntry</maml:name>
+                    <maml:uri />
+                </dev:type>
+                <dev:defaultValue>None</dev:defaultValue>
+            </command:parameter>
+        </command:parameters>
+        <command:examples>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderGroup
+                
+    dsHeuristics: null
+
+    Protected Groups:
+
+Name                         SID                                           distinguishedName
+----                         ---                                           -----------------
+Account Operators            S-1-5-32-548                                  CN=Account Operators,CN=Builtin,DC=domain,DC=com
+Administrators               S-1-5-32-544                                  CN=Administrators,CN=Builtin,DC=domain,DC=com
+Backup Operators             S-1-5-32-551                                  CN=Backup Operators,CN=Builtin,DC=domain,DC=com
+Domain Admins                S-1-5-21-1234567890-1234567890-1234567890-512 CN=Domain Admins,CN=Users,DC=domain,DC=com
+Domain Controllers           S-1-5-21-1234567890-1234567890-1234567890-516 CN=Domain Controllers,CN=Users,DC=domain,DC=com
+Enterprise Admins            S-1-5-21-1234567890-1234567890-1234567890-519 CN=Enterprise Admins,CN=Users,DC=domain,DC=com
+Print Operators              S-1-5-32-550                                  CN=Print Operators,CN=Builtin,DC=domain,DC=com
+Read-only Domain Controllers S-1-5-21-1234567890-1234567890-1234567890-521 CN=Read-only Domain Controllers,CN=Users,DC=domain,DC=com
+Replicator                   S-1-5-32-552                                  CN=Replicator,CN=Builtin,DC=domain,DC=com
+Schema Admins                S-1-5-21-1234567890-1234567890-1234567890-518 CN=Schema Admins,CN=Users,DC=domain,DC=com
+Server Operators             S-1-5-32-549                                  CN=Server Operators,CN=Builtin,DC=domain,DC=com</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда выводит значение атрибута dsHeuristics и список групп, защищенных контейнером AdminSDHolder.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+                <dev:code>Get-sthAdminSDHolderGroup
+
+    dsHeuristics: 000000000100000f
+
+    Protected Groups:
+
+Name                         SID                                           distinguishedName
+----                         ---                                           -----------------
+Administrators               S-1-5-32-544                                  CN=Administrators,CN=Builtin,DC=domain,DC=com
+Domain Admins                S-1-5-21-1234567890-1234567890-1234567890-512 CN=Domain Admins,CN=Users,DC=domain,DC=com
+Domain Controllers           S-1-5-21-1234567890-1234567890-1234567890-516 CN=Domain Controllers,CN=Users,DC=domain,DC=com
+Enterprise Admins            S-1-5-21-1234567890-1234567890-1234567890-519 CN=Enterprise Admins,CN=Users,DC=domain,DC=com
+Read-only Domain Controllers S-1-5-21-1234567890-1234567890-1234567890-521 CN=Read-only Domain Controllers,CN=Users,DC=domain,DC=com
+Replicator                   S-1-5-32-552                                  CN=Replicator,CN=Builtin,DC=domain,DC=com
+Schema Admins                S-1-5-21-1234567890-1234567890-1234567890-518 CN=Schema Admins,CN=Users,DC=domain,DC=com
+
+
+
+    Excluded Groups:
+
+Name                         SID                                           distinguishedName
+----                         ---                                           -----------------
+Account Operators            S-1-5-32-548                                  CN=Account Operators,CN=Builtin,DC=domain,DC=com
+Server Operators             S-1-5-32-549                                  CN=Server Operators,CN=Builtin,DC=domain,DC=com
+Print Operators              S-1-5-32-550                                  CN=Print Operators,CN=Builtin,DC=domain,DC=com
+Backup Operators             S-1-5-32-551                                  CN=Backup Operators,CN=Builtin,DC=domain,DC=com</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команды выводит значение атрибута dsHeuristics, список групп, защищенных контейнером AdminSDHolder, 
+а также список групп, исключенных из списка защищенных, что определяется значением 16-го символа атрибута dsHeuristics.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+        </command:examples>
+    </command:command>
+
+
+
+
+
+
+
+
+        <command:command 
+        xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
+        xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
+        xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
+        xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+        <command:details>
+            <command:name>Disable-sthAdminSDHolderGroupProtection</command:name>
+            <command:verb>Disable</command:verb>
+            <command:noun>sthAdminSDHolderGroupProtection</command:noun>
+            <maml:description>
+                <maml:para>Функция позволяет исключить указанные группы из числа защищенных контейнером AdminSDHolder.</maml:para>
+            </maml:description>
+        </command:details>
+        <maml:description>
+            <maml:para>Функция позволяет исключить группы Account Operators, Server Operators, Print Operators и Backup Operators
+из числа защищенных контейнером AdminSDHolder.</maml:para>
+        </maml:description>
+        <command:syntax>
+            <command:syntaxItem>
+                <maml:name>Disable-sthAdminSDHolderGroupProtection</maml:name>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>AccountOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Account Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>ServerOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Server Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>PrintOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Print Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>BackupOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Backup Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Disable</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesDisable</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+        </command:syntax>
+        <command:parameters>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>AccountOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Account Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>ServerOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Server Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>PrintOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Print Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>BackupOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Исключает группу Backup Operators из числа защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Disable</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesDisable</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+        </command:parameters>
+        <command:examples>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+                <dev:code>Disable-sthAdminSDHolderGroupProtection -AccountOperators -Disable -YesDisable
+                
+Current dsHeuristics value: null
+
+DISABLED: Account Operators
+
+Resulting dsHeuristics value: 0000000001000001</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда исключает группу Account Operators из числа защищенных контейнером AdminSDHolder.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+                <dev:code>Disable-sthAdminSDHolderGroupProtection -AccountOperators -ServerOperators -PrintOperators -BackupOperators -Disable -YesDisable
+
+Current dsHeuristics value: null
+
+DISABLED: Account Operators
+DISABLED: Server Operators
+DISABLED: Print Operators
+DISABLED: Backup Operators
+
+Resulting dsHeuristics value: 000000000100000f</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда исключает группы Account Operators, Server Operators, 
+Print Operators и Backup Operators из числа защищенных контейнером AdminSDHolder.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+        </command:examples>
+    </command:command>
+
+
+
+
+
+
+
+    <command:command 
+    xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
+    xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
+    xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
+    xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+        <command:details>
+            <command:name>Enable-sthAdminSDHolderGroupProtection</command:name>
+            <command:verb>Enable</command:verb>
+            <command:noun>sthAdminSDHolderGroupProtection</command:noun>
+            <maml:description>
+                <maml:para>Функция позволяет включить указанные группы в число защищенных контейнером AdminSDHolder.</maml:para>
+            </maml:description>
+        </command:details>
+        <maml:description>
+            <maml:para>Функция позволяет включить группы Account Operators, Server Operators, Print Operators и Backup Operators
+в число защищенных контейнером AdminSDHolder.</maml:para>
+        </maml:description>
+        <command:syntax>
+            <command:syntaxItem>
+                <maml:name>Enable-sthAdminSDHolderGroupProtection</maml:name>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>AccountOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Account Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>ServerOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Server Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>PrintOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Print Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>BackupOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Backup Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Enable</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesEnable</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+            </command:syntaxItem>
+        </command:syntax>
+        <command:parameters>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>AccountOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Account Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>ServerOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Server Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>PrintOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Print Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>BackupOperators</maml:name>
+                    <maml:Description>
+                        <maml:para>Включает группу Backup Operators в число защищенных.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>Enable</maml:name>
+                    <maml:Description>
+                        <maml:para>Подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+                <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+                    <maml:name>YesEnable</maml:name>
+                    <maml:Description>
+                        <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
+                    </maml:Description>
+                    <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+                    <dev:type>
+                        <maml:name>SwitchParameter</maml:name>
+                        <maml:uri />
+                    </dev:type>
+                    <dev:defaultValue>False</dev:defaultValue>
+                </command:parameter>
+        </command:parameters>
+        <command:examples>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+                <dev:code>Enable-sthAdminSDHolderGroupProtection -AccountOperators -Enable -YesEnable
+                
+Current dsHeuristics value: 000000000100000f
+
+ENABLED: Account Operators
+
+Resulting dsHeuristics value: 000000000100000e</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда включает группу Account Operators в число защищенных контейнером AdminSDHolder.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+            <command:example>
+                <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+                <dev:code>Enable-sthAdminSDHolderGroupProtection -AccountOperators -ServerOperators -PrintOperators -BackupOperators -Enable -YesEnable
+
+Current dsHeuristics value: 000000000100000f
+
+ENABLED: Account Operators
+ENABLED: Server Operators
+ENABLED: Print Operators
+ENABLED: Backup Operators
+
+Resulting dsHeuristics value: 0000000001000000</dev:code>
+                <dev:remarks>
+                    <maml:para/>
+                    <maml:para>Команда включает группы Account Operators, Server Operators, 
+Print Operators и Backup Operators в число защищенных контейнером AdminSDHolder.</maml:para>
+                    <maml:para/>
+                    <maml:para/>
+                </dev:remarks>
+            </command:example>
+        </command:examples>
+    </command:command>
+
+
+</helpItems>

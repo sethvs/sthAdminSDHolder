@@ -1,0 +1,1 @@
+Export-ModuleMember -Function Get-sthAdminSDHolderGroup, Get-sthAdminSDHolderProtectedUserAccount, Remove-sthAdminSDHolderUserAccountProtection, Enable-sthAdminSDHolderGroupProtection, Disable-sthAdminSDHolderGroupProtection
