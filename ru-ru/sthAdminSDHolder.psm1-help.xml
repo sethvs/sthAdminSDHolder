@@ -27,7 +27,6 @@
                     <maml:Description>
                         <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -54,7 +53,6 @@
                     <maml:Description>
                         <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -81,7 +79,6 @@
                     <maml:Description>
                         <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -108,7 +105,6 @@
                     <maml:Description>
                         <maml:para>Указывает функции возвращать только активные учетные записи пользователей.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -249,8 +245,6 @@ user user           user@domain.com   True    1                   False         
             </command:example>
         </command:examples>
     </command:command>
-
-
     <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -288,7 +282,6 @@ user user           user@domain.com   True    1                   False         
                     <maml:Description>
                         <maml:para>Подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -300,7 +293,6 @@ user user           user@domain.com   True    1                   False         
                     <maml:Description>
                         <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -327,7 +319,6 @@ user user           user@domain.com   True    1                   False         
                     <maml:Description>
                         <maml:para>Подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -339,7 +330,6 @@ user user           user@domain.com   True    1                   False         
                     <maml:Description>
                         <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -459,11 +449,6 @@ No changes were made.</dev:code>
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
     <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -580,15 +565,7 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
-
-
-
-        <command:command 
+    <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
         xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" 
@@ -613,7 +590,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Исключает группу Account Operators из числа защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -625,7 +601,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Исключает группу Server Operators из числа защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -637,7 +612,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Исключает группу Print Operators из числа защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -649,7 +623,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Исключает группу Backup Operators из числа защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -661,7 +634,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -673,7 +645,6 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
                     <maml:Description>
                         <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -795,13 +766,6 @@ Print Operators и Backup Operators из числа защищенных кон�
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
-
-
     <command:command 
     xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
     xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -827,7 +791,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Включает группу Account Operators в число защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -839,7 +802,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Включает группу Server Operators в число защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -851,7 +813,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Включает группу Print Operators в число защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -863,7 +824,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Включает группу Backup Operators в число защищенных.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -875,7 +835,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -887,7 +846,6 @@ Print Operators и Backup Operators из числа защищенных кон�
                     <maml:Description>
                         <maml:para>Еще одно подтверждение выполнения действия.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -1009,6 +967,4 @@ Print Operators и Backup Operators в число защищенных конт�
             </command:example>
         </command:examples>
     </command:command>
-
-
 </helpItems>

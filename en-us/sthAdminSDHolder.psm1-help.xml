@@ -26,7 +26,6 @@ whether access rights inheritance is enabled and list of protected groups the us
                     <maml:Description>
                         <maml:para>Return only enabled user accounts.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -53,7 +52,6 @@ whether access rights inheritance is enabled and list of protected groups the us
                     <maml:Description>
                         <maml:para>Return only enabled user accounts.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -80,7 +78,6 @@ whether access rights inheritance is enabled and list of protected groups the us
                     <maml:Description>
                         <maml:para>Return only enabled user accounts.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -107,7 +104,6 @@ whether access rights inheritance is enabled and list of protected groups the us
                     <maml:Description>
                         <maml:para>Return only enabled user accounts.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -247,15 +243,6 @@ using UserPrincipalName user object attribute.</maml:para>
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
-
-
-
-    
     <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -293,7 +280,6 @@ that no longer belongs to groups, protected by AdminSDHolder container.</maml:pa
                     <maml:Description>
                         <maml:para>Explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -305,7 +291,6 @@ that no longer belongs to groups, protected by AdminSDHolder container.</maml:pa
                     <maml:Description>
                         <maml:para>One more explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -332,7 +317,6 @@ that no longer belongs to groups, protected by AdminSDHolder container.</maml:pa
                     <maml:Description>
                         <maml:para>Explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -344,7 +328,6 @@ that no longer belongs to groups, protected by AdminSDHolder container.</maml:pa
                     <maml:Description>
                         <maml:para>One more explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -464,13 +447,6 @@ No changes were made.</dev:code>
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
-
-
     <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -586,10 +562,6 @@ Also function returns the list of groups, excluded from protection by virtue of 
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
         <command:command 
         xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
         xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -615,7 +587,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Disables Account Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -627,7 +598,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Disables Server Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -639,7 +609,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Disables Print Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -651,7 +620,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Disables Backup Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -663,7 +631,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -675,7 +642,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>One more explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -797,13 +763,6 @@ Print Operators and Backup Operators groups.</maml:para>
             </command:example>
         </command:examples>
     </command:command>
-
-
-
-
-
-
-
     <command:command 
     xmlns:maml="http://schemas.microsoft.com/maml/2004/10" 
     xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" 
@@ -829,7 +788,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Enables Account Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -841,7 +799,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Enables Server Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -853,7 +810,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Enables Print Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -865,7 +821,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Enables Backup Operators group protection.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -877,7 +832,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>Explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -889,7 +843,6 @@ Print Operators or Backup Operators groups.</maml:para>
                     <maml:Description>
                         <maml:para>One more explicit confirmation.</maml:para>
                     </maml:Description>
-                    <!-- <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue> -->
                     <dev:type>
                         <maml:name>SwitchParameter</maml:name>
                         <maml:uri />
@@ -1011,5 +964,4 @@ Print Operators and Backup Operators groups.</maml:para>
             </command:example>
         </command:examples>
     </command:command>
-
 </helpItems>
