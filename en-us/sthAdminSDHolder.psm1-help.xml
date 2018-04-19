@@ -175,8 +175,7 @@ Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute 
 ----         -------------- -----------------       ------- ------------------- ------------------ -------------------
 admin        admin          admin@domain.com        True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
 user         user           user@domain.com         True    1                   False              {Account Operators}
-disableduser disableduser   disableduser@domain.com False   1                   False              {Print Operators}
-</dev:code>
+disableduser disableduser   disableduser@domain.com False   1                   False              {Print Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>The command returns information about user accounts, protected by AdminSDHolder container.
@@ -189,10 +188,10 @@ Output includes disabled user accounts.</maml:para>
                 <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -EnabledOnly
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-admin        admin          admin@domain.com        True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name  SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----  -------------- ----------------- ------- ------------------- ------------------ -------------------
+admin admin          admin@domain.com  True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
+user  user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>The command returns information about user accounts, protected by AdminSDHolder container.
@@ -205,12 +204,12 @@ Output includes only enabled user accounts.</maml:para>
                 <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -ANR u
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
-                    <maml:para>The command return information about user accounts, protected by AdminSDHolder container, 
+                    <maml:para>The commands return information about user accounts, protected by AdminSDHolder container, 
 using ambiguous name resolution.</maml:para>
                     <maml:para/>
                     <maml:para/>
@@ -220,12 +219,12 @@ using ambiguous name resolution.</maml:para>
                 <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -SamAccountName user
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
-                    <maml:para>The command return information about user accounts, protected by AdminSDHolder container, 
+                    <maml:para>The command returns information about user account, protected by AdminSDHolder container, 
 using SamAccountName user object attribute.</maml:para>
                     <maml:para/>
                     <maml:para/>
@@ -235,12 +234,12 @@ using SamAccountName user object attribute.</maml:para>
                 <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -UserPrincipalName user@domain.com
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
-                    <maml:para>The command return information about user accounts, protected by AdminSDHolder container, 
+                    <maml:para>The command returns information about user account, protected by AdminSDHolder container, 
 using UserPrincipalName user object attribute.</maml:para>
                     <maml:para/>
                     <maml:para/>

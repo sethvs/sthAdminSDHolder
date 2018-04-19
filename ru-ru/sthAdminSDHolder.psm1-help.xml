@@ -190,10 +190,10 @@ disableduser disableduser   disableduser@domain.com False   1                   
                 <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -EnabledOnly
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-admin        admin          admin@domain.com        True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name  SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+----  -------------- ----------------- ------- ------------------- ------------------ -------------------
+admin admin          admin@domain.com  True    1                   False              {Administrators, Domain Admins, Enterprise Admins, Schema Admins}
+user  user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
@@ -206,9 +206,9 @@ user         user           user@domain.com         True    1                   
                 <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -ANR u
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
@@ -221,9 +221,9 @@ user         user           user@domain.com         True    1                   
                 <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -SamAccountName user
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
@@ -236,9 +236,9 @@ user         user           user@domain.com         True    1                   
                 <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
                 <dev:code>Get-sthAdminSDHolderProtectedUserAccount -UserPrincipalName user@domain.com
 
-Name         SamAccountName UserPrincipalName       Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
-----         -------------- -----------------       ------- ------------------- ------------------ -------------------
-user         user           user@domain.com         True    1                   False              {Account Operators}</dev:code>
+Name SamAccountName UserPrincipalName Enabled AdminCountAttribute InheritanceEnabled AdminSDHolderGroups
+---- -------------- ----------------- ------- ------------------- ------------------ -------------------
+user user           user@domain.com   True    1                   False              {Account Operators}</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, 
@@ -572,7 +572,7 @@ Print Operators              S-1-5-32-550                                  CN=Pr
 Backup Operators             S-1-5-32-551                                  CN=Backup Operators,CN=Builtin,DC=domain,DC=com</dev:code>
                 <dev:remarks>
                     <maml:para/>
-                    <maml:para>Команды выводит значение атрибута dsHeuristics, список групп, защищенных контейнером AdminSDHolder, 
+                    <maml:para>Команда выводит значение атрибута dsHeuristics, список групп, защищенных контейнером AdminSDHolder, 
 а также список групп, исключенных из списка защищенных, что определяется значением 16-го символа атрибута dsHeuristics.</maml:para>
                     <maml:para/>
                     <maml:para/>

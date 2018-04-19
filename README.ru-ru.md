@@ -1,53 +1,53 @@
 # sthAdminSDHolder
 
-**sthAdminSDHolder** - it is a module containing five functions for work with Active Directory groups and user accounts, protected by AdminSDHolder container.
+**sthAdminSDHolder** - модуль, содержащий пять функций для работы с группами и пользовательскими учетными записями Active Directory,
+защищенными контейнером AdminSDHolder.
 
-When you add user to one of the protected groups, like 'Account Operators', 'Administrators', 'Backup Operators',
+Когда вы добавляете пользователя в одну из защищенных групп, таких как: 'Account Operators', 'Administrators', 'Backup Operators',
 'Domain Admins', 'Domain Controllers', 'Enterprise Admins', 'Print Operators', 'Read-only Domain Controllers', 'Replicator',
-'Schema Admins' or 'Server Operators', it becomes protected too.
+'Schema Admins' or 'Server Operators', он также становится защищенным.
 
-User account object's attribute adminCount is set to '1' and access rights become that of the AdminSDHolder container
-(CN=AdminSDHolder,CN=System,DC=domain,DC=com).
+Атрибут adminCount объекта пользователя устанавливается в значение '1', а права доступа к объекту устанавливаются в соответствии с правами доступа к контейнеру AdminSDHolder (CN=AdminSDHolder,CN=System,DC=domain,DC=com).
 
-By default, access rights inheritance for AdminSDHolder is disabled. And so it is for protected user objects.
+По умолчанию, наследование прав доступа для контейнера AdminSDHolder отключено. То же самое касается и защищенных объектов пользователей.
 
-When you remove user from protected group, adminCount attribute is not removed and its value is not changed. 
-Also, permissions inheritance for the object is not enabled.
-To remove adminCount attribute and enable access rights inheritance you can use this module's functions:
-Get-sthAdminSDHolderProtectedUserAccount and Remove-sthAdminSDHolderUserAccountProtection.
+Когда вы удалаете пользователя из защищенной группы, атрибут adminCount не удаляется и его значение не изменяется.
+Наследование прав доступа к объекту также не восстанавливается.
+Для удаления атрибута adminCount и восстановления наследования прав доступа вы можете использовать функции модуля:
+Get-sthAdminSDHolderProtectedUserAccount и Remove-sthAdminSDHolderUserAccountProtection.
 
-Also, you can exclude 'Account Operators', 'Server Operators', 'Print Operators' or 'Backup Operators' groups from protection (and include again)
-by adjusting dsHeuristics attribute of 'Directory Service' container (CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=domain,DC=com).
+Кроме того, вы можете исключить группы 'Account Operators', 'Server Operators', 'Print Operators' или 'Backup Operators' из числа защищенных контейнером AdminSDHolder (или же вернуть их под защиту), изменив значение атрибута dsHeuristics контейнера 'Directory Service' (CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=domain,DC=com).
 
-You can do this using functions:
-Get-sthAdminSDHolderGroup, Disable-sthAdminSDHolderGroupProtection, Enable-sthAdminSDHolderGroupProtection.
+Сделать это вы можете при помощи функций: Get-sthAdminSDHolderGroup, Disable-sthAdminSDHolderGroupProtection, Enable-sthAdminSDHolderGroupProtection.
 
-## Module contains following functions:
+## В модуль входят следующие функции:
 
-[**Get-sthAdminSDHolderProtectedUserAccount**](#get-sthadminsdholderprotecteduseraccount) - Function gets Active Directory user accounts, protected by AdminSDHolder.
-It returns Name, SamAccountName, UserPrincipalName, whether account is enabled, adminCount attribute value, whether access rights inheritance is enabled and list of protected groups the user is member of.
+[**Get-sthAdminSDHolderProtectedUserAccount**](#get-sthadminsdholderprotecteduseraccount) - Функция отображает учетные записи пользователей Active Directory, защищенные контейнером AdminSDHolder.
+Результат выполнения включает в себя имя пользователя, значения атрибутов SamAccountName и UserPrincipalName,
+активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав досупа,
+а также список защищенных групп, в которые входит пользователь.
 
-[**Remove-sthAdminSDHolderUserAccountProtection**](#remove-sthadminsdholderuseraccountprotection) - Function removes adminCount attribute and enables access rules inheritance for the user object, that no longer belongs to groups, protected by AdminSDHolder container.
+[**Remove-sthAdminSDHolderUserAccountProtection**](#remove-sthadminsdholderuseraccountprotection) - Функция удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя, если он не входит в группы Active Directory, защищенные контейнером AdminSDHolder.
 
-[**Get-sthAdminSDHolderGroup**](#get-sthadminsdholdergroup) - Function gets the Active Directory groups, protected by AdminSDHolder container.
-It returns dsHeuristics attribute value, protected groups, and also groups, excluded from protection, if any.
+[**Get-sthAdminSDHolderGroup**](#get-sthadminsdholdergroup) - Функция отображает группы Active Directory, защищенные контейнером AdminSDHolder.
+В качестве результатов выводится текущее значение атрибута dsHeuristics, защищенные группы, а также группы, исключенные из списка защищенных, если такие существуют.
 
-[**Disable-sthAdminSDHolderGroupProtection**](#disable-sthadminsdholdergroupprotection) - Function disables protection by AdminSDHolder container for Account Operators, Server Operators, Print Operators or Backup Operators groups.
+[**Disable-sthAdminSDHolderGroupProtection**](#disable-sthadminsdholdergroupprotection) - Функция позволяет исключить группы Account Operators, Server Operators, Print Operators и Backup Operators из числа защищенных контейнером AdminSDHolder.
 
-[**Enable-sthAdminSDHolderGroupProtection**](#enable-sthadminsdholdergroupprotection) - Function enables protection by AdminSDHolder container for Account Operators, Server Operators, Print Operators or Backup Operators groups.
+[**Enable-sthAdminSDHolderGroupProtection**](#enable-sthadminsdholdergroupprotection) - Функция позволяет включить группы Account Operators, Server Operators, Print Operators и Backup Operators в число защищенных контейнером AdminSDHolder.
 
-You can install sthAdminSDHolder module from PowerShell Gallery:
+Вы можете установить модуль sthAdminSDHolder из PowerShell Gallery:
 
 ```powershell
 Install-Module sthAdminSDHolder
 ```
 
-## How to use it?
+## Как с этим работать?
 
 ### Get-sthAdminSDHolderProtectedUserAccount
 
-The command returns information about user accounts, protected by AdminSDHolder container.
-Output includes disabled user accounts.
+Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
+Реультат выполнения содежит деактивированные учетные записи.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount
@@ -64,8 +64,8 @@ disableduser disableduser   disableduser@domain.com False   1                   
 
 ---
 
-The command returns information about user accounts, protected by AdminSDHolder container.
-Output includes only enabled user accounts.
+Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
+Реультат выполнения содежит только активные учетные записи.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount -EnabledOnly
@@ -80,8 +80,7 @@ user  user           user@domain.com   True    1                   False        
 
 ---
 
-The command returns information about user accounts, protected by AdminSDHolder container,
-using ambiguous name resolution.
+Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, с использованием ANR - Ambiguous Name Resolution.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount -ANR u
@@ -95,8 +94,7 @@ user user           user@domain.com   True    1                   False         
 
 ---
 
-The command returns information about user account, protected by AdminSDHolder container,
-using SamAccountName user object attribute.
+Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, с использованием поиска по атрибуту SamAccountName.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount -SamAccountName user
@@ -110,8 +108,7 @@ user user           user@domain.com   True    1                   False         
 
 ---
 
-The command returns information about user account, protected by AdminSDHolder container,
-using UserPrincipalName user object attribute.
+Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder, с использованием поиска по атрибуту UserPrincipalName.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount -UserPrincipalName user@domain.com
@@ -125,8 +122,8 @@ user user           user@domain.com   True    1                   False         
 
 ### Remove-sthAdminSDHolderUserAccountProtection
 
-The command removes adminCount attribute and enables access rules inheritance for the user account.
-The account was specified by using its SamAccountName.
+Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
+Учетная запись определятеся значением атрибута SamAccountName.
 
 ```powershell
 Remove-sthAdminSDHolderUserAccountProtection -SamAccountName user -Remove -YesRemove
@@ -145,8 +142,8 @@ Access rules inheritance enabled.
 
 ---
 
-The command removes adminCount attribute and enables access rules inheritance for the user account.
-The account was specified by using its UserPrincipalName.
+Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
+Учетная запись определятеся значением атрибута UserPrincipalName.
 
 ```powershell
 Remove-sthAdminSDHolderUserAccountProtection -UserPrincipalName user@domain.com -Remove -YesRemove
@@ -165,7 +162,7 @@ Access rules inheritance enabled.
 
 ---
 
-The command does not make changes to user account, because it still is a member of a protected group.
+Команда не вносит изменений, поскольку пользователь все еще входит в защищенные контейнером AdminSDHolder группы.
 
 ```powershell
 Remove-sthAdminSDHolderUserAccountProtection -SamAccountName username -Remove -YesRemove
@@ -183,7 +180,7 @@ No changes were made.
 
 ### Get-sthAdminSDHolderGroup
 
-The command gets the value of dsHeuristics attribute and a list of groups, protected by AdminSDHolder container.
+Команда выводит значение атрибута dsHeuristics и список групп, защищенных контейнером AdminSDHolder.
 
 ```powershell
 Get-sthAdminSDHolderGroup
@@ -211,8 +208,7 @@ Server Operators             S-1-5-32-549                                  CN=Se
 
 ---
 
-The command gets the value of dsHeuristics attribute and a list of groups protected by AdminSDHolder container.
-Also function returns the list of groups, excluded from protection by virtue of 16'th character's value of dsHeuristics attribute.
+Команда выводит значение атрибута dsHeuristics, список групп, защищенных контейнером AdminSDHolder, а также список групп, исключенных из списка защищенных, что определяется значением 16-го символа атрибута dsHeuristics.
 
 ```powershell
 Get-sthAdminSDHolderGroup
@@ -247,7 +243,7 @@ Backup Operators             S-1-5-32-551                                  CN=Ba
 
 ### Disable-sthAdminSDHolderGroupProtection
 
-The command disables protection by AdminSDHolder container for Account Operators group.
+Команда исключает группу Account Operators из числа защищенных контейнером AdminSDHolder.
 
 ```powershell
 Disable-sthAdminSDHolderGroupProtection -AccountOperators -Disable -YesDisable
@@ -263,8 +259,7 @@ Resulting dsHeuristics value: 0000000001000001
 
 ---
 
-The command disables protection by AdminSDHolder container for Account Operators, Server Operators, 
-Print Operators and Backup Operators groups.
+Команда исключает группы Account Operators, Server Operators,  Print Operators и Backup Operators из числа защищенных контейнером AdminSDHolder.
 
 ```powershell
 Disable-sthAdminSDHolderGroupProtection -AccountOperators -ServerOperators -PrintOperators -BackupOperators -Disable -YesDisable
@@ -283,7 +278,7 @@ Resulting dsHeuristics value: 000000000100000f
 
 ### Enable-sthAdminSDHolderGroupProtection
 
-The command enables protection by AdminSDHolder container for Account Operators group.
+Команда включает группу Account Operators в число защищенных контейнером AdminSDHolder.
 
 ```powershell
 Enable-sthAdminSDHolderGroupProtection -AccountOperators -Enable -YesEnable
@@ -299,8 +294,7 @@ Resulting dsHeuristics value: 000000000100000e
 
 ---
 
-The command enables protection by AdminSDHolder container for Account Operators, Server Operators, 
-Print Operators and Backup Operators groups.
+Команда включает группы Account Operators, Server Operators, Print Operators и Backup Operators в число защищенных контейнером AdminSDHolder.
 
 ```powershell
 Enable-sthAdminSDHolderGroupProtection -AccountOperators -ServerOperators -PrintOperators -BackupOperators -Enable -YesEnable
