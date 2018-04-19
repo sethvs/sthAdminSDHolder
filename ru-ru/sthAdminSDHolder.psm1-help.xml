@@ -16,7 +16,7 @@
         <maml:description>
             <maml:para>Функция отображает учетные записи пользователей Active Directory, защищенные контейнером AdminSDHolder.
 Результат выполнения включает в себя имя пользователя, значения атрибутов SamAccountName и UserPrincipalName,
-активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав досупа, 
+активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав доступа, 
 а также список защищенных групп, в которые входит пользователь.</maml:para>
         </maml:description>
         <command:syntax>
@@ -177,7 +177,7 @@ disableduser disableduser   disableduser@domain.com False   1                   
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
-Реультат выполнения содежит деактивированные учетные записи.</maml:para>
+Результат выполнения содержит деактивированные учетные записи.</maml:para>
                     <maml:para/>
                     <maml:para/>
                 </dev:remarks>
@@ -193,7 +193,7 @@ user  user           user@domain.com   True    1                   False        
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
-Реультат выполнения содежит только активные учетные записи.</maml:para>
+Результат выполнения содержит только активные учетные записи.</maml:para>
                     <maml:para/>
                     <maml:para/>
                 </dev:remarks>
@@ -404,7 +404,7 @@ Access rules inheritance enabled.</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
-Учетная запись определятеся значением атрибута SamAccountName.</maml:para>
+Учетная запись определяется значением атрибута SamAccountName.</maml:para>
                     <maml:para/>
                     <maml:para/>
                 </dev:remarks>
@@ -424,7 +424,7 @@ Access rules inheritance enabled.</dev:code>
                 <dev:remarks>
                     <maml:para/>
                     <maml:para>Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
-Учетная запись определятеся значением атрибута UserPrincipalName.</maml:para>
+Учетная запись определяется значением атрибута UserPrincipalName.</maml:para>
                     <maml:para/>
                     <maml:para/>
                 </dev:remarks>

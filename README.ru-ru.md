@@ -11,7 +11,7 @@
 
 По умолчанию, наследование прав доступа для контейнера AdminSDHolder отключено. То же самое касается и защищенных объектов пользователей.
 
-Когда вы удалаете пользователя из защищенной группы, атрибут adminCount не удаляется и его значение не изменяется.
+Когда вы удаляете пользователя из защищенной группы, атрибут adminCount не удаляется и его значение не изменяется.
 Наследование прав доступа к объекту также не восстанавливается.
 Для удаления атрибута adminCount и восстановления наследования прав доступа вы можете использовать функции модуля:
 Get-sthAdminSDHolderProtectedUserAccount и Remove-sthAdminSDHolderUserAccountProtection.
@@ -24,7 +24,7 @@ Get-sthAdminSDHolderProtectedUserAccount и Remove-sthAdminSDHolderUserAccountPr
 
 [**Get-sthAdminSDHolderProtectedUserAccount**](#get-sthadminsdholderprotecteduseraccount) - Функция отображает учетные записи пользователей Active Directory, защищенные контейнером AdminSDHolder.
 Результат выполнения включает в себя имя пользователя, значения атрибутов SamAccountName и UserPrincipalName,
-активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав досупа,
+активна ли учетная запись, значение атрибута adminCount, включено ли наследование прав доступа,
 а также список защищенных групп, в которые входит пользователь.
 
 [**Remove-sthAdminSDHolderUserAccountProtection**](#remove-sthadminsdholderuseraccountprotection) - Функция удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя, если он не входит в группы Active Directory, защищенные контейнером AdminSDHolder.
@@ -47,7 +47,7 @@ Install-Module sthAdminSDHolder
 ### Get-sthAdminSDHolderProtectedUserAccount
 
 Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
-Реультат выполнения содежит деактивированные учетные записи.
+Результат выполнения содержит деактивированные учетные записи.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount
@@ -65,7 +65,7 @@ disableduser disableduser   disableduser@domain.com False   1                   
 ---
 
 Команда выводит информацию об учетных записях пользователей, защищенных контейнером AdminSDHolder.
-Реультат выполнения содежит только активные учетные записи.
+Результат выполнения содержит только активные учетные записи.
 
 ```powershell
 Get-sthAdminSDHolderProtectedUserAccount -EnabledOnly
@@ -123,7 +123,7 @@ user user           user@domain.com   True    1                   False         
 ### Remove-sthAdminSDHolderUserAccountProtection
 
 Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
-Учетная запись определятеся значением атрибута SamAccountName.
+Учетная запись определяется значением атрибута SamAccountName.
 
 ```powershell
 Remove-sthAdminSDHolderUserAccountProtection -SamAccountName user -Remove -YesRemove
@@ -143,7 +143,7 @@ Access rules inheritance enabled.
 ---
 
 Команда удаляет атрибут adminCount и восстанавливает наследование прав доступа для объекта пользователя.
-Учетная запись определятеся значением атрибута UserPrincipalName.
+Учетная запись определяется значением атрибута UserPrincipalName.
 
 ```powershell
 Remove-sthAdminSDHolderUserAccountProtection -UserPrincipalName user@domain.com -Remove -YesRemove
