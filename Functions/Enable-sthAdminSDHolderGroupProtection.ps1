@@ -1,4 +1,4 @@
-# .externalhelp sthAdminSDHolder.psm1-help.xml
+# .externalhelp ..\sthAdminSDHolder.psm1-help.xml
 function Enable-sthAdminSDHolderGroupProtection
 {
 Param(

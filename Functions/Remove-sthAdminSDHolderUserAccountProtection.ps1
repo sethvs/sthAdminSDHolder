@@ -1,4 +1,4 @@
-# .externalhelp sthAdminSDHolder.psm1-help.xml
+# .externalhelp ..\sthAdminSDHolder.psm1-help.xml
 function Remove-sthAdminSDHolderUserAccountProtection
 {
     [CmdletBinding(DefaultParameterSetName='default')]
@@ -57,7 +57,6 @@ function Remove-sthAdminSDHolderUserAccountProtection
             {
                 Write-Output -InputObject "`nWHATIF: To remove adminCount attribute and restore access rules inheritance, specify -Remove and -YesRemove parameters."
                 $AdminSDHolderProtectedAccount
-                # Write-Output -InputObject "`n`nTo remove adminCount attribute and restore access rules inheritance specify -Remove and -YesRemove parameters.`nNo changes were made."
                 Write-Output -InputObject "`nWHATIF: No changes were made."
             }
         }
